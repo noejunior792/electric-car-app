@@ -3,4 +3,6 @@
     <string name="sou_um_texto" translatable="false">Sou um texto</string>
     <string name="nomeApp" translatable="false">EletricCarApp</string>
     <string name="enviar_formul_rio" translatable="false">Enviar formulário</string>
+    <string name="sobrenome" translatable="false">Sobrenome</string>
+    <string name="nome" translatable="false">Nome</string>
 </resources>
