@@ -5,4 +5,6 @@
     <string name="enviar_formul_rio" translatable="false">Enviar formulário</string>
     <string name="sobrenome" translatable="false">Sobrenome</string>
     <string name="nome" translatable="false">Nome</string>
+    <string name="meu_titulo">Meu titulo</string>
+    <string name="enviar">Enviar</string>
 </resources>
