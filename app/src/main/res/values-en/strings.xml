@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ElectricCarApp</string>
+    <string name="app_name">Electric Car</string>
     <string name="preco">KZ 1.250.000</string>
 </resources>

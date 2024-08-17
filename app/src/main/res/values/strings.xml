@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">ElectricCarApp</string>
-    <string name="sou_um_texto" translatable="false">Sou um texto</string>
-    <string name="nomeApp" translatable="false">EletricCarApp</string>
-    <string name="enviar_formul_rio" translatable="false">Enviar formulário</string>
-    <string name="sobrenome" translatable="false">Sobrenome</string>
-    <string name="nome" translatable="false">Nome</string>
-    <string name="meu_titulo">Meu titulo</string>
+    <string name="app_name">Electric Car</string>
     <string name="enviar">Enviar</string>
+    <string name="carros">Carros</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="pre_o">Preço</string>
+    <string name="preco">KZ 1.250.000</string>
+    <string name="bateria">Bateria</string>
+    <string name="bateria_value">93,34 kWh</string>
+    <string name="potencia_value">646 CV</string>
+    <string name="pot_ncia">Potência</string>
+    <string name="recarga">Recarga</string>
+    <string name="recarga_value">23 min</string>
 </resources>

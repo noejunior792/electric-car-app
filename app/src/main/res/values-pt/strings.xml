@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Carro Electrico</string>
+    <string name="enviar_formul_rio" >Enviar formulário</string>
+    <string name="preco">KZ 1.250.000</string>
+    <string name="bateria">Bateria</string>
 </resources>
