@@ -11,4 +11,7 @@
     <string name="pot_ncia">Potência</string>
     <string name="recarga">Recarga</string>
     <string name="recarga_value">23 min</string>
+    <string name="pre_o_kwh">Preço kwh</string>
+    <string name="km_percorrido">Km Percorrido</string>
+    <string name="calcular">Calcular</string>
 </resources>

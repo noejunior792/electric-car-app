@@ -4,4 +4,7 @@
     <string name="enviar_formul_rio" >Enviar formulário</string>
     <string name="preco">KZ 1.250.000</string>
     <string name="bateria">Bateria</string>
+    <string name="pre_o_kwh">Preço kwh</string>
+    <string name="km_percorrido">Km Percorrido</string>
+    <string name="calcular">Calcular</string>
 </resources>
