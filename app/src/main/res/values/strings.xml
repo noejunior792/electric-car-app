@@ -14,4 +14,7 @@
     <string name="pre_o_kwh">Preço kwh</string>
     <string name="km_percorrido">Km Percorrido</string>
     <string name="calcular">Calcular</string>
+    <string name="pizza">Pizza</string>
+    <string name="hambuguer">Hambuguer</string>
+    <string name="selecione_sua_comida_favorita">Selecione sua comida favorita</string>
 </resources>

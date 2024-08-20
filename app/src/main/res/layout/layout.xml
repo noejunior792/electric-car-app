@@ -132,6 +132,7 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="@string/pre_o_kwh"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:maxLength="10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,5 +161,40 @@
         app:layout_constraintEnd_toEndOf="@id/et_km_percorrido"
         app:layout_constraintStart_toStartOf="@id/et_km_percorrido"
         app:layout_constraintTop_toBottomOf="@id/et_km_percorrido" />
+
+
+    <TextView
+        android:id="@+id/tv_selecione_comida_favorita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecione_sua_comida_favorita"
+        app:layout_constraintStart_toStartOf="@+id/btn_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_comida_favorita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/tv_selecione_comida_favorita"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selecione_comida_favorita">
+
+        <RadioButton
+            android:id="@+id/rb_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza" />
+
+        <RadioButton
+            android:id="@+id/rb_hamburguer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hambuguer" />
+
+    </RadioGroup>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
