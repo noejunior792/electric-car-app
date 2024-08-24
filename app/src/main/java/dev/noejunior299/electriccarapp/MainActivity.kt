@@ -1,11 +1,13 @@
 package dev.noejunior299.electriccarapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import dev.noejunior299.electriccarapp.presentation.CalcularAutonomiaActivity
 
 
 class MainActivity : ComponentActivity() {
@@ -32,7 +34,8 @@ class MainActivity : ComponentActivity() {
 
     fun setupListeners() {
         btnCalcular.setOnClickListener {
-            calcular()
+            // calcular()
+            startActivity(Intent(this, CalcularAutonomiaActivity::class.java))
         }
     }
 

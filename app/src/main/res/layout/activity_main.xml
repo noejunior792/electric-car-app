@@ -125,52 +125,17 @@
         app:layout_constraintStart_toEndOf="@id/tv_recarga"
         />
 
-    <EditText
-        android:id="@+id/et_precoCalculo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:ems="10"
-        android:hint="@string/pre_o_kwh"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal"
-        android:maxLength="10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_recarga_value" />
-
-    <EditText
-        android:id="@+id/et_km_percorrido"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/km_percorrido"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal"
-        android:maxLength="10"
-        app:layout_constraintEnd_toEndOf="@id/et_precoCalculo"
-        app:layout_constraintStart_toStartOf="@id/et_precoCalculo"
-        app:layout_constraintTop_toBottomOf="@id/et_precoCalculo" />
-
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/calcular"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="@id/et_km_percorrido"
-        app:layout_constraintStart_toStartOf="@id/et_km_percorrido"
-        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido" />
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_resultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/btn_calcular"
-        app:layout_constraintTop_toBottomOf="@+id/btn_calcular"
-        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

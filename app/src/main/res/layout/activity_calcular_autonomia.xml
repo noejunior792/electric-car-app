@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_precoCalculo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:hint="@string/pre_o_kwh"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_km_percorrido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/km_percorrido"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="@id/et_precoCalculo"
+        app:layout_constraintStart_toStartOf="@id/et_precoCalculo"
+        app:layout_constraintTop_toBottomOf="@id/et_precoCalculo" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@id/et_km_percorrido"
+        app:layout_constraintStart_toStartOf="@id/et_km_percorrido"
+        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btn_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
