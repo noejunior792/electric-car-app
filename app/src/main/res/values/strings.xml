@@ -20,6 +20,7 @@
     <string name="meu_compromisso_1">Meu Compromisso 1</string>
     <string name="meu_compromisso_2">Meu compromisso 2</string>
     <string name="ligar_lampada">Ligar Lampada?</string>
+    <string name="calcular_autonomia">Calcular Autonomia</string>
     <string-array name="array_cidades">
         <item>Luanda</item>
         <item>Cazenga</item>
