@@ -24,7 +24,7 @@
         </activity>
         <activity
             android:name=".presentation.CalcularAutonomiaActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>
