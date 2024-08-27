@@ -47,13 +47,14 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/gray"
         app:cardCornerRadius="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_favoritos">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_card_content"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
@@ -61,6 +62,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:importantForAccessibility="no"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
                 android:src="@drawable/eletric_car"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
