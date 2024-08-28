@@ -40,118 +40,6 @@
         app:layout_constraintTop_toTopOf="@id/tv_carros"
         tools:ignore="MissingConstraints" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_car"
-        android:layout_width="0dp"
-        android:elevation="24dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"
-        app:cardBackgroundColor="@color/gray"
-        app:cardCornerRadius="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_favoritos">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_card_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/tv_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:importantForAccessibility="no"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:src="@drawable/eletric_car"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_preco"
-                style="@style/TextAppearance.AppCompat.Body2"
-                android:layout_width="62dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/pre_o"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_image" />
-
-            <TextView
-                android:id="@+id/tv_preco_value"
-                style="@style/TextAppearance.AppCompat.Body1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="@string/preco"
-                app:layout_constraintStart_toEndOf="@id/tv_preco"
-                app:layout_constraintTop_toBottomOf="@id/tv_image" />
-
-            <TextView
-                android:id="@+id/tv_bateria"
-                style="@style/TextAppearance.AppCompat.Body2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="@string/bateria"
-                app:layout_constraintStart_toStartOf="@id/tv_preco"
-                app:layout_constraintTop_toBottomOf="@id/tv_preco" />
-
-            <TextView
-                android:id="@+id/tv_bateria_value"
-                style="@style/TextAppearance.AppCompat.Body1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/bateria_value"
-                app:layout_constraintStart_toEndOf="@id/tv_bateria"
-                app:layout_constraintTop_toBottomOf="@id/tv_preco_value" />
-
-            <TextView
-                android:id="@+id/tv_potencia"
-                style="@style/TextAppearance.AppCompat.Body2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/pot_ncia"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_bateria" />
-
-            <TextView
-                android:id="@+id/tv_potencia_value"
-                style="@style/TextAppearance.AppCompat.Body1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/potencia_value"
-                app:layout_constraintStart_toEndOf="@id/tv_potencia"
-                app:layout_constraintTop_toBottomOf="@id/tv_bateria_value" />
-
-            <TextView
-                android:id="@+id/tv_recarga"
-                style="@style/TextAppearance.AppCompat.Body2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/recarga"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_potencia" />
-
-            <TextView
-                android:id="@+id/tv_recarga_value"
-                style="@style/TextAppearance.AppCompat.Body1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/recarga_value"
-                app:layout_constraintStart_toEndOf="@id/tv_recarga"
-                app:layout_constraintTop_toBottomOf="@id/tv_potencia_value" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="0dp"
@@ -161,5 +49,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lista_carros"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/tv_carros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_calcular"
+        tools:listitem="@layout/carro_item"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
