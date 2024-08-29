@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import dev.noejunior299.electriccarapp.data.CarFactory
 import dev.noejunior299.electriccarapp.presentation.CalcularAutonomiaActivity
 import dev.noejunior299.electriccarapp.presentation.adapter.CarAdapter
 
@@ -31,17 +31,7 @@ class MainActivity : ComponentActivity() {
     }
 
     fun setupList() {
-        var dados = arrayOf(
-            "Cupcake",
-            "Donut",
-            "Froyo",
-            "Gingerbread",
-            "Honeycomb",
-            "Ice Cream Sandwich",
-            "Jelly Bean"
-        )
-        val adapter = CarAdapter(dados)
-        listaCarros.adapter = adapter
+        listaCarros.adapter = CarAdapter(CarFactory().list)
     }
 
     fun setupListeners() {
